@@ -29,7 +29,8 @@ class Account:
         print("Account Details : \n")
         
         #for giving the details of the new account.
-        print("Account No. : ", self.accNo," ","Account Holder Name : ", self.name, " ", "Account Type : ", self.type, " ", "Account Balance : ", self.deposit)
+        print("Account No. : ", self.accNo," ","Account Holder Name : ", self.name, " ", 
+              "Account Type : ", self.type, " ", "Account Balance : ", self.deposit)
         
     def showAccount(self):
         print("Account Number : ",self.accNo)
@@ -103,7 +104,8 @@ def displayAll():
         for item in details :
             
             #printing the account details.
-            print("Account No. : ", item.accNo," ","Account Holder Name : ", item.name, " ", "Account Type : ", item.type, " ", "Account Balance : ", item.deposit)
+            print("Account No. : ", item.accNo," ","Account Holder Name : ", item.name, " ", 
+                  "Account Type : ", item.type, " ", "Account Balance : ", item.deposit)
             
         infile.close()
                 
@@ -337,7 +339,8 @@ def modifyAccount(num):
                 
                 #showing the current details present in the records.
                 print("\n")
-                print("Account No. : ", item.accNo," ","Account Holder Name : ", item.name, " ", "Account Type : ", item.type, " ", "Account Balance : ", item.deposit)
+                print("Account No. : ", item.accNo," ","Account Holder Name : ", item.name, " ", 
+                      "Account Type : ", item.type, " ", "Account Balance : ", item.deposit)
                 print("\n")
                 
                 #Menu for modification.
@@ -353,24 +356,28 @@ def modifyAccount(num):
                 #selection w.r.t choice.
                 if choice == '1':
                     item.name = input("Enter the account holder name : ")
-                    print("\nAccount No. : ", item.accNo," ","Modified Account Holder Name : ", item.name)
+                    print("\nAccount No. : ", item.accNo," ",
+                          "Modified Account Holder Name : ", item.name)
                     print("\nName Modified Successfully.")
                     
                 elif choice == '2':
                     item.type = input("Enter the account Type : ")
-                    print("\nAccount No. : ", item.accNo," ","Modified Account Type : ", item.type)
+                    print("\nAccount No. : ", item.accNo," ",
+                          "Modified Account Type : ", item.type)
                     print("\nAccount Type Modified Successfully.")
                     
                 elif choice == '3':
                     item.deposit = int(input("Enter the Amount : "))
-                    print("\nAccount No. : ", item.accNo," ","Modified Account Balance : ", item.deposit)
+                    print("\nAccount No. : ", item.accNo," ",
+                          "Modified Account Balance : ", item.deposit)
                     print("\nCurrent Balance Modified Successfully.")
                     
                 elif choice == '4':
                     item.name = input("Enter the account holder name : ")
                     item.type = input("Enter the account Type : ")
                     item.deposit = int(input("Enter the Amount : "))
-                    print("\nAccount No. : ", item.accNo," ","Modified Account Holder Name : ", item.name, " ", "Modified Account Type : ", item.type, " ", "Modified Account Balance : ", item.deposit)
+                    print("\nAccount No. : ", item.accNo," ","Modified Account Holder Name : ", item.name, " ", 
+                          "Modified Account Type : ", item.type, " ", "Modified Account Balance : ", item.deposit)
                     print("\n Name, Account Type, Current Balance Modified Successfully.")
                     
                 else:
